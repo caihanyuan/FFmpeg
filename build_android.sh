@@ -26,8 +26,8 @@ function build_android
     --extra-cflags="-Os -fpic $ADDI_CFLAGS" \
     --extra-ldflags="$ADDI_LDFLAGS" \
     $ADDITIONAL_CONFIGURE_FLAG
-#make clean
-#make -j 16
-#make install
+make clean
+make -j16
+make install
 }
 build_android
