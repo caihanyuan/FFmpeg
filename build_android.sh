@@ -14,6 +14,7 @@ function build_android
     --disable-doc \
     --disable-ffmpeg \
     --disable-ffplay \
+    --disable-ffserver \
     --disable-ffprobe \
     --disable-avdevice \
     --disable-doc \
