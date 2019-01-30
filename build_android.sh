@@ -19,15 +19,15 @@ function build_android
     --disable-doc \
     --disable-symver \
     --cross-prefix=$TOOLCHAIN/bin/arm-linux-androideabi- \
-    --target-os=linux \
+    --target-os=android \
     --arch=arm \
     --enable-cross-compile \
     --sysroot=$SYSROOT \
     --extra-cflags="-Os -fpic $ADDI_CFLAGS" \
     --extra-ldflags="$ADDI_LDFLAGS" \
     $ADDITIONAL_CONFIGURE_FLAG
-#make clean
-#make -j 16
-#make install
+make clean
+make -j16
+make install
 }
 build_android
